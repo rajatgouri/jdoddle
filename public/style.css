@@ -1,6 +1,4 @@
-body {
-    
-}
+
 #part1, #part2, .divider {
     display: inline-block;
     top:7%
@@ -22,6 +20,7 @@ body {
 .divider {
     width: 1%;
     position:absolute;
+    height:700px;
     left: 47%;
     cursor: col-resize;
     background-color: rgb(165, 164, 164);

@@ -2,7 +2,13 @@ $(function () {
     function enableTab(id) {
         var el = document.getElementById(id);
         var totalCount = 1;
+
+
         el.onkeydown = function (e) {
+
+            $('.divider').css('height', $('#part1').height() + 'px')
+            $('#part2').css('height', $('#part1').height() + 'px')
+
 
             if (e.keyCode === 9) {
 
@@ -98,10 +104,6 @@ $(function () {
                 }
             }
         }
-
-        
-        
-       
         
     }
 
@@ -120,8 +122,6 @@ $(function () {
             $("#part2").css({ width: p1 + p2 - a });
         }
     });
-
-
 
 
     $('#yourcode').text('')
