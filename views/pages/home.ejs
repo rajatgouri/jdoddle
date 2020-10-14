@@ -1,0 +1,51 @@
+<%- include('../partials/header'); -%>
+
+<div class="row border  w-100">
+    <div class="col-12">
+        <h2>Python</h2>
+    </div>
+    <div id="part1">
+        <form class="form-group h-98 w-100 h-100  border-light">
+            <div class="col-12 text-right border p-1 bg-light">
+                <div class="clear-fix code-area-banner">
+                    <div class="float-left">
+                        <h6>Code</h6>
+                    </div>
+                    <div class="float-right">
+                        <button type="button" class="btn btn-sm btn-success" onclick="runit()">Run</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 h-98 p-0 ">
+                <div class="column1 p-0 text-center numbers" style="display: inline; float:left ">
+                    1<br>
+                </div>
+                <div class="column11 h-100 p-0 " style="display: inline; float:left ">
+                    
+                <textarea spellcheck="false" id="yourcode" rows="27" class="w-100 form-control  transparent border-0 ">
+                </textarea>
+                </div>
+
+            </div>
+
+        </form>
+    </div>
+    <div class="divider"></div>
+    <div id="part2">
+        <div class="col-12 text-right border p-1 bg-light">
+            <div class="clear-fix code-area-banner">
+                <div class="float-left">
+                    <h6>Results</h6>
+                </div>
+                <div class="float-right">
+                    <button type="button" class="btn btn-sm btn-danger" onclick="stopit()">Stop</button>
+                </div>
+            </div>
+        </div>
+        <pre id="output" class=" w-100"></pre>
+        <div id="mycanvas" class="text-center w-100 "></div>
+    </div>
+
+</div>
+
+<%- include('../partials/footer'); -%>
