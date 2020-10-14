@@ -16,8 +16,9 @@ app.get('/', (req,res,next) => {
     res.render('pages/home');
 })
 
+const port = process.env.PORT || 8100;
 
 
-app.listen(8100, () => {
+app.listen(port, () => {
     console.log('App is Running!')
 })
